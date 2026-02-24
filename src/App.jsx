@@ -6,6 +6,7 @@ import { RouteGuard } from './routes/RouteGuard.jsx'
 import { ToastContainer } from './components/Toast.jsx'
 import LoginPage from './pages/auth/LoginPage.jsx'
 import RegisterPage from './pages/auth/RegisterPage.jsx'
+import Landing from './pages/public/Landing.jsx'
 import { DashboardLayout } from './layouts/DashboardLayout.jsx'
 import StudentDashboard from './pages/student/StudentDashboard.jsx'
 import StudentCourses from './pages/student/StudentCourses.jsx'
@@ -36,7 +37,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<RootRedirect />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
 
